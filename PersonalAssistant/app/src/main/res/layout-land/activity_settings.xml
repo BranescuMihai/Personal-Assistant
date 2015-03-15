@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Movement Log"
+                android:background="@android:color/holo_purple"
+                android:onClick="log_click"/>
+
+            <Button
+                android:id="@+id/remove_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clear Log"
+                android:background="@android:color/holo_purple"
+                android:onClick="log_del"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Movement: Location &amp; distance in meters"
+            android:layout_marginRight="10dp"
+            android:textSize="13sp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:layout_weight="5"/>
+
+            <EditText
+                android:id="@+id/distance"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:layout_weight="2"
+                android:inputType="phone"/>
+
+        </LinearLayout>
+
+            <Button
+            android:id="@+id/add_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Location"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_marginTop="20dp"
+
+            android:onClick="add_location_click"/>
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pill Name"
+            android:layout_marginRight="10dp"
+            android:textSize="13sp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <EditText
+                android:id="@+id/pill_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_pill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add pill"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="add_pill_click"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Call ID: "
+            android:layout_marginRight="10dp"
+            android:textSize="13sp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="20dp"/>
+
+            <EditText
+                android:id="@+id/caller"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:inputType="phone" />
+
+        <Button
+            android:id="@+id/add_caller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Caller"
+            android:background="@android:color/holo_green_light"
+            android:onClick="add_caller_click"
+            android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add panic button text: "
+                android:layout_marginRight="10dp"
+                android:textSize="13sp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="20dp"/>
+
+            <EditText
+                android:id="@+id/panicText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/add_panicText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Text"
+                android:background="@android:color/holo_orange_light"
+                android:onClick="add_panic_text"
+                android:layout_marginTop="20dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
